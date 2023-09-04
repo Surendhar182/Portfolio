@@ -4,7 +4,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./image/icon.png">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/Portfolio/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +31,9 @@
             </li>
             <li class="nav-item">
                 <a href="#about"  class="nav-link">About</a>
+                <li class="nav-item">
+                  <a href="#skills"  class="nav-link">skills</a>
+              </li>
             </li>
             <li class="nav-item">
                 <a href="#Projects"  class="nav-link">Projects</a>
@@ -48,8 +51,8 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <div class="d-flex justify-content-center align-items-center vh1-00">
             <p class="text-center"> <span style="color: rgba(255, 0, 0, 0.687);">I am a Developer</span></p>
-            <p class="text-center"> <span style="color:  rgba(253, 249, 0, 0.788);">I am a Designer</span></p>
-            <p class="text-center"> <span style="color: rgba(0, 255, 13, 0.842);">I am a Maker</span></p>
+            <p class="text-center"> <span style="color: rgba(253, 249, 0, 0.788);">I am a Designer</span></p>
+            <p class="text-center "> <span style="color: rgba(0, 255, 13, 0.842);">I am a Network Engineer</span></p>
         </div>
         </div>
     </div>
@@ -58,10 +61,13 @@
 <body class="contedudo" >
     <div class="contedudo">
     <hr>
-    <!-- about section-->
-    <section id="about">
+<!-- about section start -->
+     <section id="about">
         <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me..!</h1>
+            <div class="max-width">
+              <h2 class="title">About Me</h2>
+              <div class="skills-content">
+                  <div class="column left">
             <div class="row mt-4">
                 <div class="col-lg-4">
                     <img src="./image/icon1.jpg" class= "imageAboutPage" alt="">
@@ -80,17 +86,73 @@
                     <div class="row mt-3">
                         <p> &emsp;&emsp;👋Iam Surendar. basic level skilled web developer with expertise in computer fundamentals and Computer Networking and Computer Hardware & Software, UI/UX design, and troubleshooting. With a solid understanding of programming languages and frameworks, create dynamic and interactive websites. and know-how in tools like Figma allow to design visually and user-friendly interfaces. Additionally, have a knack for troubleshooting computer issues and providing technical support.
                         </p>
-                        <!-- <link href="https://github.com/Surendhar182" rel="GitHub"> -->
                         <a href="https://github.com/Surendhar182" class="fa fa-github"></a>
-                        <a href="https://www.linkedin.com/in/surendar-s-66b991260" class="fa fa-linkedin"></a>
-                    </div>
+                        <a &emsp;&emsp; href="https://www.linkedin.com/in/surendar-s-66b991260" class="fa fa-linkedin"></a>
+                        <button onclick="window.location.href = 'https://drive.google.com/drive/folders/1OM3iqkxdrDg-9AH3Jq6SO4QnpicV-jAu?usp=sharing';"href=""class="button btn-float-right">Download CV</button>
+                      </div>
                 </div>
             </div>
     </section>
     <hr>
+ <!-- skills section start -->
+ <section class="skills" id="skills">
+  <div class="max-width">
+      <h2 class="title">My skills</h2>
+      <div class="skills-content">
+          <div class="column left">
+              <div class="text">My creative skills & experiences.</div>
+              <p>As an Bachelor Graduate with on Desktop Supporting and Networking and Web Development and I am looking
+                forward to work in companies where I can utilize my skills,learn and grow professionally and
+                personally</p>
+              <a href="#">Read more</a>
+          </div>
+          <div class="column right">
+              <div class="bars">
+                  <div class="info">
+                      <span>Networking</span>
+                      <span>90%</span>
+                  </div>
+                  <div class="line html"></div>
+              </div>
+              <div class="bars">
+                  <div class="info">
+                      <span>Linux</span>
+                      <span>60%</span>
+                  </div>
+                  <div class="line css"></div>
+              </div>
+              <div class="bars">
+                  <div class="info">
+                      <span>Windows</span>
+                      <span>80%</span>
+                  </div>
+                  <div class="line js"></div>
+              </div>
+              <div class="bars">
+                  <div class="info">
+                      <span>CCNA</span>
+                      <span>50%</span>
+                  </div>
+                  <div class="line php"></div>
+              </div>
+              <div class="bars">
+                  <div class="info">
+                      <span>SQL,HTML,CSS,JS,Python</span>
+                      <span>70%</span>
+                  </div>
+                  <div class="line mysql"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<hr>
     <!-- Projects section-->
     <section id="Projects">
-      <h1 class="text-center">Projects</h1>
+      <div class="max-width">
+        <h2 class="title">My Projects</h2>
+        <div class="skills-content">
+            <div class="column left">
     <div class="wrap">
       <div class="box">
         <div class="box-top">
@@ -152,5 +214,4 @@
        <script src="/bootstrap/js/jqurey.min.js"></script>
        <script src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
-</div>
 </html>

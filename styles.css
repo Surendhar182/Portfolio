@@ -89,6 +89,129 @@ nav{
         font-size: 70px;
     }
 }
+
+/* all similar content styling codes */
+section{
+  padding: 100;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.about, .services, .skills, .teams, .contact, footer{
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after{
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: rgb(12, 12, 12);
+  padding: 0 5px;
+  background: #d3d3d3;
+  transform: translateX(-50%);
+}
+
+/* skills section styling */
+.skills .skills-content .column{
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+  text-align: justify;
+}
+.skills .skills-content .left a{
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+  color: crimson;
+  background: none;
+}
+.skills .skills-content .right .bars{
+  margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span{
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skills-content .right .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.skills .skills-content .right .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+.skills-content .right .html::before{
+  width: 90%;
+}
+.skills-content .right .css::before{
+  width: 60%;
+}
+.skills-content .right .js::before{
+  width: 80%;
+}
+.skills-content .right .php::before{
+  width: 50%;
+}
+.skills-content .right .mysql::before{
+  width: 70%;
+}
+
 /* about section image css */
 .imageAboutPage {
     width: 100%;
@@ -100,10 +223,34 @@ nav{
     color: rgb(17, 16, 16);
 }
 
+.button {
+  background: crimson;
+  color: #f50808;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: inherit;
+  border-radius: 25x;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+  -webkit-border-radius: 25x;
+  -moz-border-radius: 25x;
+  -ms-border-radius: 25x;
+  -o-border-radius: 25x;
+}
+.button2 :hover{
+  background-color: rgb(218, 22, 22); 
+  border: 2px solid red;
+  float: right;
+}
+.button2 {
+
+  float: right;
+}
 .share-button a{
     flex: 1;
 font-size: 26px;
-color: #252525.0;
+color: #ffffff.0;
 text-align: center;
 transform: translateX(-100%);
 opacity: 0;
@@ -128,8 +275,8 @@ transition-delay: 3s linear;
 .share-button{
          width: 280px;
          height: 80px;
-        background: #6ff5e3;
-        border-color: aqua;
+        background: #ff0000;
+        border-color: rgb(255, 0, 0);
         display: flex;
         align-items: center;
         border-radius: 40px;
@@ -151,7 +298,7 @@ transition-delay: 3s linear;
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgb(49, 203, 224);
+        background: rgba(253, 95, 95, 0.788);
         color: #0d0d0e;
         text-align: center;
         Line-height: 80px;
@@ -196,10 +343,12 @@ transition-delay: 3s linear;
       .fa-github {
         background: #080808;
         color: white;
+        margin-left: 10xp;
       }
       .fa-linkedin {
         background: #007bb5;
         color: white;
+        margin-right:-10xp;
       }
 .gotopbtn{
         position: fixed;
@@ -220,7 +369,7 @@ transition-delay: 3s linear;
         margin: 0;
       }
       :root {
-        --purple: hsl(240, 80%, 89%);
+        --purple: hsl(0, 100%, 51%);
         --pink: hsl(0, 59%, 94%);
         --light-bg: hsl(204, 37%, 92%);
         --light-gray-bg: hsl(0, 0%, 94%);
@@ -265,7 +414,7 @@ transition-delay: 3s linear;
         flex-basis: 100%;
         position: relative;
         padding: 24px;
-        background: #ffffff96;
+        background: #fffefe;
       }
       .box-top {
         display: flex;
